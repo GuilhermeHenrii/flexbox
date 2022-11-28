@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align items</title>
+    <style>
+          .conteiner{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            margin: 10px;
+          }
+
+          .conteiner-column{
+            flex-direction: column;
+          }
+          
+          .item{
+            background-color: blueviolet;
+            color: white;
+            text-align: center;
+            margin: 5px;
+            flex: 1;
+          }
+
+          .center{
+            align-items: center;
+          }
+
+          .stretch{
+            align-items: stretch;
+          }
+
+          .flex-start{
+            align-items: flex-start;
+          }
+
+          .flex-end{
+            align-items: flex-end;
+          }
+
+          .baseline{
+            align-items: baseline;
+          }
+
+          .central{
+            height: 300px;
+            justify-content: center;
+          }
+          .central .item{
+            flex: 0;
+            padding: 20px;
+          }
+
+    </style>
+</head>
+<body>
+    <h1>row</h1>
+    <h1>center</h1>
+    <section class="conteiner center">
+        <div class="item">Lorem ipsum dolor sit ammet</div>
+        <div class="item">item 2</div>
+        <div class="item">item tres</div>
+    </section>
+
+    <h1>stretch</h1>
+    <section class="conteiner stretch">
+        <div class="item">Lorem ipsum dolor sit ammet</div>
+        <div class="item">item 2</div>
+        <div class="item">item tres mais texto mais texto mais texto</div>
+    </section>
+
+    <h1>flex-start</h1>
+    <section class="conteiner flex-start">
+        <div class="item">Lorem ipsum dolor sit  mais texto mais texto</div>
+        <div class="item">item 2 item 2 item2</div>
+        <div class="item">item tres</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="conteiner flex-end">
+        <div class="item">Lorem ipsum dolor sit ammet mais texto mais texto</div>
+        <div class="item">item 2 item2 item2</div>
+        <div class="item">item tres</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="conteiner baseline">
+        <div class="item">Lorem ipsum dolor sit ammet mais texto mais texto</div>
+        <div class="item">item 2 item2 item2</div>
+        <div class="item">item tres</div>
+    </section>
+    
+    <h1>column</h1>
+    <h1>flex-start</h1>
+    <section class="conteiner flex-start conteiner-column">
+        <div class="item">Lorem ipsum dolor sit  mais texto mais texto</div>
+        <div class="item">item 2 item 2 item2</div>
+        <div class="item">item tres</div>
+    </section>
+
+    <h1>flex-end</h1>
+    <section class="conteiner flex-end conteiner-column">
+        <div class="item">Lorem ipsum dolor sit ammet mais texto mais texto</div>
+        <div class="item">item 2 item2 item2</div>
+        <div class="item">item tres</div>
+    </section>
+
+    <h1>center</h1>
+    <section class="conteiner center conteiner-column">
+        <div class="item">Lorem ipsum dolor sit ammet</div>
+        <div class="item">item 2</div>
+        <div class="item">item tres</div>
+        <div class="item">item quatro</div>
+    </section>
+
+    <h1>baseline</h1>
+    <section class="conteiner baseline conteiner-column">
+        <div class="item">Lorem ipsum dolor sit ammet</div>
+        <div class="item">item 2</div>
+        <div class="item">item tres</div>
+        <div class="item">item quatro</div>
+    </section>
+
+    <h1>alinhamento central à tela</h1>
+    <section class="conteiner central center">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+    </section>
+</body>
+</html>
