@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - flex basis</title>
+    <style>
+        .container{
+            max-width: 500px;
+            border: 2px solid black;
+            display: flex;
+            margin-bottom: 10px;
+            flex-flow: row nowrap;
+        }
+
+        .item{
+            background-color: orangered;
+            color: whitesmoke;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .b-zero{
+            flex-basis: 0;
+        }
+
+        .b-auto{
+            flex-basis: auto;
+        }
+
+        .flex-grow1{
+            flex-grow: 1;
+        }
+
+        .flex-grow2{
+            flex-grow: 2;
+        }
+
+        .w100{
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+<body>
+    <h1>basis auto</h1>
+    <div class="container">
+        <div class="item b-auto flex-grow1">A</div>
+        <div class="item b-auto flex-grow1">BB</div>
+        <div class="item b-auto flex-grow1">C</div>
+        <div class="item b-auto flex-grow1">DDD</div>
+    </div>
+
+    <h1>basis 0(zero)</h1>
+    <div class="container">
+        <div class="item b-zero flex-grow1">A</div>
+        <div class="item b-zero flex-grow1">BB</div>
+        <div class="item b-zero flex-grow1">C</div>
+        <div class="item b-zero flex-grow1">DDD</div>
+    </div>
+
+    <h1>basis + width</h1>
+    <div class="container">
+        <div class="item w100 flex-grow1">A</div>
+        <div class="item w100 flex-grow1">BB</div>
+        <div class="item w100 flex-grow1">C</div>
+        <div class="item w100 flex-grow1">DDD</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - order</title>
+    <style>
+        .flex-container{
+            display: flex;
+            max-width: 350px;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+
+        .column{
+            flex-direction: column;
+        }
+
+        .item{
+            flex: 1;
+            background-color: brown;
+            color: aquamarine;
+            color: black;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+
+        .order-4{
+            order: 4;
+        }
+
+        .order-5{
+            order: 5;
+        }
+
+        /* Order negativos */
+        .order_-1{
+            order: -1;
+        }
+
+        .order_-2{
+            order: -2;
+        }
+
+        .order_-3{
+            order: -3;
+        }
+
+        .order_-4{
+            order: -4;
+        }
+
+        .order_-5{
+            order: -5;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <h1>order: 0</h1>
+    <div class="flex-container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h1>Order com números negativos</h1>
+    <div class="flex-container">
+        <div class="item order_-5">1</div>
+        <div class="item order_-2">2</div>
+        <div class="item order_-4">3</div>
+        <div class="item order_-3">4</div>
+        <div class="item order_-1">5</div>
+    </div>
+
+    <h1>orders diferentes</h1>
+    <div class="flex-container">
+        <div class="item order-5">1</div>
+        <div class="item order-3">2</div>
+        <div class="item order-2">3</div>
+        <div class="item order-1">4</div>
+        <div class="item order-4">5</div>
+    </div>
+
+    <h1>COLUMN</h1>
+    <h1>orders diferentes</h1>
+    <div class="flex-container column">
+        <div class="item order-5">1</div>
+        <div class="item order-3">2</div>
+        <div class="item order-2">3</div>
+        <div class="item order-1">4</div>
+        <div class="item order-4">5</div>
+    </div>
+
+
+</body>
+</html>
