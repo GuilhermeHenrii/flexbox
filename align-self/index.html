@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - align self</title>
+    <style>
+        .flex-container{
+            max-width: 350px;
+            margin-bottom: 10px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .flex-container-column{
+            flex-direction: column;
+        }
+
+        .align-container{
+            align-items:  center;
+        }
+
+        .item{
+            background-color:crimson;
+            color: chocolate;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .center{
+            align-self: center;
+        }
+
+        .flex-start{
+            align-self: flex-start;
+        }
+
+        .flex-end{
+            align-self: flex-end;
+        }
+
+        .stretch{
+            align-self: stretch;
+        }
+
+
+        .baseline{
+            align-self: baseline;
+        }
+
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>ROW</h1>
+    <h1>Auto (stretch)</h1>
+     <section class="flex-container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet!</div>
+        <div class="item auto">item</div>
+        <div class="item auto">123</div>
+     </section>
+
+     <h1>Auto (priorizando o align items)</h1>
+     <section class="flex-container align-container">
+        <div class="item auto">AAAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet!</div>
+        <div class="item auto">item</div>
+        <div class="item auto">123</div>
+     </section>
+
+    <h1>Valores variados</h1>
+    <section class="flex-container">
+        <div class="item flex-start">AAAA</div>
+        <div class="item flex-end">123</div>
+        <div class="item stretch">Lorem ipsum dolor sit amet.</div>
+        <div class="item center">item</div>
+        <div class="item baseline">123</div>
+    </section>
+
+    <h1>COLUMN</h1>
+    <h1>Auto</h1>
+     <section class="flex-container flex-container-column">
+            <div class="item auto">AAAA</div>
+            <div class="item auto">123</div>
+            <div class="item auto">Lorem ipsum dolor sit amet!</div>
+            <div class="item auto">item</div>
+            <div class="item auto">123</div>
+            <div class="item auto">123</div>
+     </section>
+
+    <h1>Valores variados</h1>
+    <section class="flex-container flex-container-column">
+        <div class="item flex-end">AAAA</div>
+        <div class="item flex-start">123</div>
+        <div class="item auto">Lorem ipsum dolor sit amet!</div>
+        <div class="item stretch">item</div>
+        <div class="item center">123</div>
+        <div class="item baseline">123</div>
+    </section>
+</body>
+</html>
