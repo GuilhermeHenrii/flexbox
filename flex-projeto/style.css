@@ -63,7 +63,7 @@
     font-size: 20px;
 }
 
-.main-container .section-one .left-container .buttom{
+.main-container .section-one .left-container .button{
     background-color: rgb(23, 23, 112);
     border-radius: 20px;
     text-align: center;
@@ -77,7 +77,7 @@
     cursor: pointer;
 }
 
-.main-container .section-one .left-container .buttom p{
+.main-container .section-one .left-container .button p{
     margin: 0px;
 }
 
@@ -122,6 +122,24 @@
 
 
 /* Aside settings config */
-aside{
+.aside-container{
     background-color: blue;
+    display: flex;
+    height: 500px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.aside-container > h1{
+    color: white;
+    align-self: flex-start;
+    margin-top:50px;
+    margin-left: 100px;
+}
+
+
+
+.button-aside{
+    width:100px;
+    height: 30px;
 }
