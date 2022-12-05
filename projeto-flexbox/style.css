@@ -135,6 +135,7 @@ header .menu{
 
 .list-servico .item-servico{
     text-align: center;
+    justify-content: space-around;
 }
 
 .item-servico a{
